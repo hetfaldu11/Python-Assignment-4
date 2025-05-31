@@ -1,0 +1,15 @@
+file = open("C:/Users/LENOVO/OneDrive/Desktop/Python Assignments/Python-Assignment-4/output.txt", "w")
+file.write(input("Enter text to write to the file: "))
+print("Data successfully written to output.txt\n")
+file.close()
+
+file = open("C:/Users/LENOVO/OneDrive/Desktop/Python Assignments/Python-Assignment-4/output.txt", "a")
+file.write("\n" + input("Enter additional text to append to the file: "))
+print("Data successfully appended\n")
+file.close()
+
+print("Final content of output.txt:")
+file = open("C:/Users/LENOVO/OneDrive/Desktop/Python Assignments/Python-Assignment-4/output.txt", "r")
+data = file.read()
+print(data)
+file.close()
